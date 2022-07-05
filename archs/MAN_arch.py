@@ -7,7 +7,7 @@ import torch.nn.functional as F
 
 from basicsr.utils.registry import ARCH_REGISTRY
 
-
+#LKA from VAN (https://github.com/Visual-Attention-Network)
 class LKA(nn.Module):
     def __init__(self, dim):
         super().__init__()
