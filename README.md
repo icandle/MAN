@@ -8,15 +8,16 @@
     <img src="images/MAN_arch.png" width="960"> <br /></p>
     <em> Overview of the proposed MAN constituted of three components: the shallow feature extraction module (SF), the deep feature extraction module (DF) based on
     multiple multi-scale attention blocks (MAB), and the high-quality image reconstruction module. </em>
-    
-</div>      
+ 
+ &nbsp;
 
 **Component details:** three multi-scale decomposition modes are utilized in MLKA. The 7×7 depth-wise convolution is used in the GSAU.
 <p align="center">
     <img src="images/MAN_details.png" width="480"> <br /></p>
     <em> Details of Multi-scale Large Kernel Attention (MLKA), Gated Spatial Attention Unit (GSAU), and Large Kernel Attention Tail (LKAT). </em>
-</div>  
 
+&nbsp;
+ 
 ## Results and Models
 
 Models download at [Google Drive](https://drive.google.com/drive/folders/1sARYFkVeTIFVCa2EnZg9TjZvirDvUNOL?usp=sharing) and [Baidu Pan](https://pan.baidu.com/s/15CTY-mgdTuOc1I8mzIA4Ug?pwd=mans) (pwd: **mans** for all links)
@@ -34,6 +35,6 @@ Results of our MAN-tiny/light/base models. Set5 validation set is used below to 
 
 The [BasicSR](https://github.com/XPixelGroup/BasicSR) framework is utilized to train our MAN, also testing. 
 
-##
+## Acknowledgements
 
 We would thank [VAN](https://github.com/Visual-Attention-Network/VAN-Classification) and [BasicSR](https://github.com/XPixelGroup/BasicSR) for their enlightening work!
