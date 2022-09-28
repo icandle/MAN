@@ -5,16 +5,16 @@
 ## Details
 **Network architecture**: MAB number (n_resblocks): **5/24/36**, channel width (n_feats): **48/60/180** for **tiny/light/base MAN**.
 <p align="center">
-    <img src="images/MAN_arch.png" width="960"> <br />
+    <img src="images/MAN_arch.png" width="960"> <br /></p>
     <em> Overview of the proposed MAN constituted of three components: the shallow feature extraction module (SF), the deep feature extraction module (DF) based on
-    multiple multi-scale attention blocks (MAB), and the high-quality image reconstruction module. </em></p>
+    multiple multi-scale attention blocks (MAB), and the high-quality image reconstruction module. </em>
     
 </div>      
 
 **Component details:** three multi-scale decomposition modes are utilized in MLKA. The 7×7 depth-wise convolution is used in the GSAU.
 <p align="center">
-    <img src="images/MAN_details.png" width="480"> <br />
-    <em> Details of Multi-scale Large Kernel Attention (MLKA), Gated Spatial Attention Unit (GSAU), and Large Kernel Attention Tail (LKAT). </em></p>
+    <img src="images/MAN_details.png" width="480"> <br /></p>
+    <em> Details of Multi-scale Large Kernel Attention (MLKA), Gated Spatial Attention Unit (GSAU), and Large Kernel Attention Tail (LKAT). </em>
 </div>  
 
 ## Results and Models
