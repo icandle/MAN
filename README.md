@@ -9,6 +9,7 @@ Models download at [Google Drive](https://drive.google.com/drive/folders/1sARYFk
 
 
 Results on the Set5 validation set with our MAN-tiny/light/base models for x4 SR.
+
 | Methods  |  Params   |  Madds   |PSNR(x2)|PSNR(x3)|PSNR(x4)|Download Results  |
 |:-------：|:---------:|:--------:|:------:|:------:|:------:|:--------:|
 | MAN-tiny |      150K |     8.4G | 37.91  | -      | 32.07  | x2/x4    |
