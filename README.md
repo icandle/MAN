@@ -2,7 +2,7 @@
 ### Codes for paper "Multi-scale Attention Network for Image Super-Resolution".
 
  
-## Details
+## Implementary Details
 **Network architecture**: MAB number (n_resblocks): **5/24/36**, channel width (n_feats): **48/60/180** for **tiny/light/base MAN**.
 <p align="center">
     <img src="images/MAN_arch.png" width="960"> <br /></p>
@@ -20,7 +20,7 @@
  
 ## Results and Models
 
-Models download at [Google Drive](https://drive.google.com/drive/folders/1sARYFkVeTIFVCa2EnZg9TjZvirDvUNOL?usp=sharing) and [Baidu Pan](https://pan.baidu.com/s/15CTY-mgdTuOc1I8mzIA4Ug?pwd=mans) (pwd: **mans** for all links)
+Pretrained models avialable at [Google Drive](https://drive.google.com/drive/folders/1sARYFkVeTIFVCa2EnZg9TjZvirDvUNOL?usp=sharing) and [Baidu Pan](https://pan.baidu.com/s/15CTY-mgdTuOc1I8mzIA4Ug?pwd=mans) (pwd: **mans** for all links)
 
 
 Results of our MAN-tiny/light/base models. Set5 validation set is used below to show the general performance. The visual results of five testsets are provided in the last column.
