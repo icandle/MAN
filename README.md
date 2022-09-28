@@ -3,11 +3,17 @@ Codes for paper "Multi-scale Attention Network for Image Super-Resolution".
 
  
 ## Details
-Network architecture:
+**Network architecture**:
+<p align="center">
+    <img src="images/MAN_arch.png" width="960"> <br /></p>
+    <em> Overview of the proposed MAN constituted of three components: the shallow feature extraction module (SF), the deep feature extraction module (DF) based on
+    multiple multi-scale attention blocks (MAB), and the high-quality image reconstruction module. </em>
 
-Component details:
 
-Implementary details: MAB number (n_resblocks): **5/24/36**, channel width (n_feats): **48/60/180** for **tiny/light/base MAN**.
+
+**Component details:**
+
+MAB number (n_resblocks): **5/24/36**, channel width (n_feats): **48/60/180** for **tiny/light/base MAN**.
 
 ## Results and Models
 
