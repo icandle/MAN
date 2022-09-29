@@ -1,5 +1,5 @@
 # MAN
-### Codes for paper "[Multi-scale Attention Network for Image Super-Resolution](https://arxiv.org/abs/2209.14145)".
+### Codes for paper "[Multi-scale Attention Network for Single Image Super-Resolution](https://arxiv.org/abs/2209.14145)".
 
  
 ## Implementary Details
