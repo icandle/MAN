@@ -1,6 +1,14 @@
 # MAN
 ### Codes for paper "[Multi-scale Attention Network for Single Image Super-Resolution](https://arxiv.org/abs/2209.14145)".
 
+```
+@article{wang2022multi,
+  title={Multi-scale Attention Network for Single Image Super-Resolution},
+  author={Wang, Yan and Li, Yusen and Wang, Gang and Liu, Xiaoguang},
+  journal={arXiv preprint arXiv:2209.14145},
+  year={2022}
+}
+```
  
 ## Implementary Details
 **Network architecture**: MAB number (n_resblocks): **5/24/36**, channel width (n_feats): **48/60/180** for **tiny/light/base MAN**.
