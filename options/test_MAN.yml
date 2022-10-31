@@ -1,0 +1,76 @@
+name: MANx2
+model_type: SRModel
+scale: 2
+num_gpu: 1  # set num_gpu: 0 for cpu mode
+manual_seed: 0
+
+datasets:
+  test_1:  # the 1st test dataset
+    name: Set5
+    type: PairedImageDataset
+    dataroot_gt: ./datasets/Set5/GTmod2
+    dataroot_lq: ./datasets/Set5/LRbicx2
+    io_backend:
+      type: disk
+
+  # test_2:  # the 2nd test dataset
+  #   name: Set14
+  #   type: PairedImageDataset
+  #   dataroot_gt: ./datasets/Set14/GTmod2
+  #   dataroot_lq: ./datasets/Set14/LRbicx2
+  #   io_backend:
+  #     type: disk
+
+  # test_3:
+  #   name: Urban100
+  #   type: PairedImageDataset
+  #   dataroot_gt: ./datasets/urban100/GTmod2
+  #   dataroot_lq: ./datasets/urban100/LRbicx2
+  #   io_backend:
+  #     type: disk
+
+  # test_4:
+  #    name: BSDS100
+  #    type: PairedImageDataset
+  #    dataroot_gt: ./datasets/BSDS100/GTmod2
+  #    dataroot_lq: ./datasets/BSDS100/LRbicx2
+  #    io_backend:
+  #      type: disk
+
+  # test_5:
+  #     name: Manga109
+  #     type: PairedImageDataset
+  #     dataroot_gt: ./datasets/manga109/GTmod2
+  #     dataroot_lq: ./datasets/manga109/LRbicx2
+  #     io_backend:
+  #       type: disk
+
+# network structures
+network_g:
+  type: MAN
+  scale: 2 #or 3/4
+  n_resblocks: 36 # 5 for MAN-tiny; 24 for MAN-light; 36 for MAN 
+  n_resgroups: 1
+  n_feats: 180 # 48 for MAN-tiny; 60 for MAN-light; 180 for MAN 
+
+
+# path
+path:
+  pretrain_network_g: ./experiments/pretrained_models/HAT_SRx2.pth
+  strict_load_g: true
+  param_key_g: 'params_ema' # only for MAN, for MAN-T and MAN-L, using ~ 
+
+# validation settings
+val:
+  save_img: true
+  suffix: ~  # add suffix to saved images, if None, use exp name
+
+  metrics:
+    psnr: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 2
+      test_y_channel: true
+    ssim:
+      type: calculate_ssim
+      crop_border: 2
+      test_y_channel: true
