@@ -1,7 +1,7 @@
 name: MAN_SR
 model_type: SRModel
 scale: 2 # 2/3/4/8
-num_gpu: 8 
+num_gpu: 8 # or 4
 manual_seed: 10
 
 datasets:
