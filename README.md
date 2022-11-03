@@ -9,7 +9,12 @@
   year={2022}
 }
 ```
- 
+
+## Environment
+- [PyTorch >= 1.8](https://pytorch.org/)
+- [BasicSR >= 1.3.5](https://github.com/xinntao/BasicSR-examples/blob/master/README.md) 
+
+
 ## Implementary Details
 **Network architecture**: MAB number (n_resblocks): **5/24/36**, channel width (n_feats): **48/60/180** for **tiny/light/base MAN**.
 <p align="center">
@@ -43,6 +48,18 @@ Results of our MAN-tiny/light/base models. Set5 validation set is used below to 
 
 The [BasicSR](https://github.com/XPixelGroup/BasicSR) framework is utilized to train our MAN, also testing. 
 
+**Training with the example option:**
+
+```
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch --nproc_per_node=8 --master_port=4321 train.py -opt options/trian_MAN.yml --launcher pytorch
+```
+**Tesing with the example option:**
+
+```
+python test.py -opt options/test_MAN.yml
+```
+
+The training/testing results will be saved in the `./experiments` and `./results` folder, respectively.  
 ## Acknowledgements
 
 We would thank [VAN](https://github.com/Visual-Attention-Network/VAN-Classification) and [BasicSR](https://github.com/XPixelGroup/BasicSR) for their enlightening work!
