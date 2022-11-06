@@ -28,21 +28,7 @@
 <p align="center">
     <img src="images/MAN_details.png" width="480"> <br /></p>
     <em> Details of Multi-scale Large Kernel Attention (MLKA), Gated Spatial Attention Unit (GSAU), and Large Kernel Attention Tail (LKAT). </em>
-
 &nbsp;
- 
-## Results and Models
-
-Pretrained models available at [Google Drive](https://drive.google.com/drive/folders/1sARYFkVeTIFVCa2EnZg9TjZvirDvUNOL?usp=sharing) and [Baidu Pan](https://pan.baidu.com/s/15CTY-mgdTuOc1I8mzIA4Ug?pwd=mans) (pwd: **mans** for all links).
-
-
-Results of our MAN-tiny/light/base models. Set5 validation set is used below to show the general performance. The visual results of five testsets are provided in the last column.
-
-| Methods  |  Params   |  Madds   |PSNR/SSIM (x2)|PSNR/SSIM (x3)|PSNR/SSIM (x4)|Results|
-|:---------|:---------:|:--------:|:------:|:------:|:------:|:--------:|
-| MAN-tiny |      150K |     8.4G | 37.91/0.9603  |        -      | 32.07/0.8930  | [x2](https://pan.baidu.com/s/1mYkGvAlz0bSZuCVubkpsmg?pwd=mans)/[x4](https://pan.baidu.com/s/1u22su2bT4Pq_idVxAnqWdw?pwd=mans)    |
-| MAN-light|      840K |    47.1G | 38.18/0.9612  | 34.65/0.9292  | 32.50/0.8988  | [x2](https://pan.baidu.com/s/1AVuPa7bsbb3qMQqMSM-IJQ?pwd=mans)/[x3](https://pan.baidu.com/s/1TRL7-Y23JddVOpEhH0ObEQ?pwd=mans)/[x4](https://pan.baidu.com/s/1T2bPZcjFRxAgMxGWtPv-Lw?pwd=mans) |
-| MAN+     |     8712K |     495G | 38.44/0.9623  | 34.97/0.9315  | 32.87/0.9030  | [x2](https://pan.baidu.com/s/1pTb3Fob_7MOxMKIdopI0hQ?pwd=mans)/[x3](https://pan.baidu.com/s/1L3HEtcraU8Y9VY-HpCZdfg?pwd=mans)/[x4](https://pan.baidu.com/s/1FCNqht9zi9HecG3ExRdeWQ?pwd=mans) |
 
 ## Training and Testing
 
@@ -60,6 +46,28 @@ python test.py -opt options/test_MAN.yml
 ```
 
 The training/testing results will be saved in the `./experiments` and `./results` folder, respectively.  
+
+## Results and Models
+
+Pretrained models available at [Google Drive](https://drive.google.com/drive/folders/1sARYFkVeTIFVCa2EnZg9TjZvirDvUNOL?usp=sharing) and [Baidu Pan](https://pan.baidu.com/s/15CTY-mgdTuOc1I8mzIA4Ug?pwd=mans) (pwd: **mans** for all links).
+
+
+|HR (x4)|MAN-tiny|[EDSR-base+](https://github.com/sanghyun-son/EDSR-PyTorch)|MAN-light|[EDSR+](https://github.com/sanghyun-son/EDSR-PyTorch)|MAN|
+|       :-----       |       :-----:       |     :-----:        |        :-----:         |        :-----:         |        :-----:         |
+| <img width="100" src="images/Visual_Results/U004/HR.png">| <img width="100" src="images/Visual_Results/U004/MAN-Tiny.png">|<img width="100" src="images/Visual_Results/U004/EDSR-Base.png">|<img width="100" src="images/Visual_Results/U004/MAN-Light.png">|<img width="100" src="images/Visual_Results/U004/EDSR.png">|<img width="100" src="images/Visual_Results/U004/MAN.png">|
+| <img width="100" src="images/Visual_Results/U012/HR.png">| <img width="100" src="images/Visual_Results/U012/MAN-Tiny.png">|<img width="100" src="images/Visual_Results/U012/EDSR-Base.png">|<img width="100" src="images/Visual_Results/U012/MAN-Light.png">|<img width="100" src="images/Visual_Results/U012/EDSR.png">|<img width="100" src="images/Visual_Results/U012/MAN.png">|
+| <img width="100" src="images/Visual_Results/U044/HR.png">| <img width="100" src="images/Visual_Results/U044/MAN-Tiny.png">|<img width="100" src="images/Visual_Results/U044/EDSR-Base.png">|<img width="100" src="images/Visual_Results/U044/MAN-Light.png">|<img width="100" src="images/Visual_Results/U044/EDSR.png">|<img width="100" src="images/Visual_Results/U044/MAN.png">|
+| <img width="100" src="images/Visual_Results/D0850/HR.png">| <img width="100" src="images/Visual_Results/D0850/MAN-Tiny.png">|<img width="100" src="images/Visual_Results/D0850/EDSR-Base.png">|<img width="100" src="images/Visual_Results/D0850/MAN-Light.png">|<img width="100" src="images/Visual_Results/D0850/EDSR.png">|<img width="100" src="images/Visual_Results/D0850/MAN.png">|
+|**Para/MAdds**| 150K/8G|1518K/114G|840K/47G|43090K/2895G|8712K/495G|
+
+Results of our MAN-tiny/light/base models. Set5 validation set is used below to show the general performance. The visual results of five testsets are provided in the last column.
+
+| Methods  |  Params   |  Madds   |PSNR/SSIM (x2)|PSNR/SSIM (x3)|PSNR/SSIM (x4)|Results|
+|:---------|:---------:|:--------:|:------:|:------:|:------:|:--------:|
+| MAN-tiny |      150K |     8.4G | 37.91/0.9603  |       *TODO*      | 32.07/0.8930  | [x2](https://pan.baidu.com/s/1mYkGvAlz0bSZuCVubkpsmg?pwd=mans)/[x4](https://pan.baidu.com/s/1u22su2bT4Pq_idVxAnqWdw?pwd=mans)    |
+| MAN-light|      840K |    47.1G | 38.18/0.9612  | 34.65/0.9292  | 32.50/0.8988  | [x2](https://pan.baidu.com/s/1AVuPa7bsbb3qMQqMSM-IJQ?pwd=mans)/[x3](https://pan.baidu.com/s/1TRL7-Y23JddVOpEhH0ObEQ?pwd=mans)/[x4](https://pan.baidu.com/s/1T2bPZcjFRxAgMxGWtPv-Lw?pwd=mans) |
+| MAN+     |     8712K |     495G | 38.44/0.9623  | 34.97/0.9315  | 32.87/0.9030  | [x2](https://pan.baidu.com/s/1pTb3Fob_7MOxMKIdopI0hQ?pwd=mans)/[x3](https://pan.baidu.com/s/1L3HEtcraU8Y9VY-HpCZdfg?pwd=mans)/[x4](https://pan.baidu.com/s/1FCNqht9zi9HecG3ExRdeWQ?pwd=mans) |
+
 ## Acknowledgements
 
 We would thank [VAN](https://github.com/Visual-Attention-Network/VAN-Classification) and [BasicSR](https://github.com/XPixelGroup/BasicSR) for their enlightening work!
