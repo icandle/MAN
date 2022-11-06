@@ -16,7 +16,7 @@
 
 
 ## Implementary Details
-**Network architecture**: MAB number (n_resblocks): **5/24/36**, channel width (n_feats): **48/60/180** for **tiny/light/base MAN**.
+**Network architecture**: Group number (n_resgroups): **1 for simplicity**, MAB number (n_resblocks): **5/24/36**, channel width (n_feats): **48/60/180** for **tiny/light/base MAN**.
 <p align="center">
     <img src="images/MAN_arch.png" width="960"> <br /></p>
     <em> Overview of the proposed MAN constituted of three components: the shallow feature extraction module (SF), the deep feature extraction module (DF) based on
