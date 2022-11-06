@@ -45,12 +45,11 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch --nproc_
 python test.py -opt options/test_MAN.yml
 ```
 
-The training/testing results will be saved in the `./experiments` and `./results` folder, respectively.  
+The training/testing results will be saved in the `./experiments` and `./results` folders, respectively.  
 
 ## Results and Models
 
 Pretrained models available at [Google Drive](https://drive.google.com/drive/folders/1sARYFkVeTIFVCa2EnZg9TjZvirDvUNOL?usp=sharing) and [Baidu Pan](https://pan.baidu.com/s/15CTY-mgdTuOc1I8mzIA4Ug?pwd=mans) (pwd: **mans** for all links).
-
 
 |HR (x4)|MAN-tiny|[EDSR-base+](https://github.com/sanghyun-son/EDSR-PyTorch)|MAN-light|[EDSR+](https://github.com/sanghyun-son/EDSR-PyTorch)|MAN|
 |       :-----       |       :-----:       |     :-----:        |        :-----:         |        :-----:         |        :-----:         |
